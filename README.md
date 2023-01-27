@@ -1,38 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Finstreet Burger Challenge
 
-## Getting Started
+## Task
+We are working at a burger place and have to create a UI for our customers to order their burgers. The burger place offers three different burgers with the following prices:
 
-First, run the development server:
+- hamburger --> 5.0
+- cheesseburger --> 6.0
+- chilli cheeseburger --> 8.0
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+which all come in three different sizes that modify the price by a factor:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- small (s) --> * 0.7
+- medium (m) --> * 1.0 
+- large (l) --> * 1.3
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+The customer wants to add multiple burgers to his order and select a different size for each burger. Since the customer does not want to rely on his own math skills we should provide him with the display to see all burgers he ordered with the actual price of the burger.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+To stay competitive with other burger restaurants we offer several ways to our customer to save money. There are different promotion codes that will offer two specific burgers to the price of one burger to the customer. Additionally, we want to offer the customer discount codes which deduct a percentage amount of the whole order price. Our manager wants the customer to add exactly one promotion code and one discount code to his order. The checkout display should show the price reduction from the promotion and discount code. 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+After confirming the order we want to redirect the customer to a success page and show him that his order was successful, and he will receive his order soon.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Libraries
+We have some libraries that we are using in most of our finstreet projects and would like to use them in this project as well:
 
-## Learn More
+### ChakraUI
+If you already have experience with using ChakraUI feel free to use it here as well, but you can also use the default html components to not waste too much time on learning ChakraUI. 
 
-To learn more about Next.js, take a look at the following resources:
+### react-hook-form / react-final-form
+You can choose one of the two form libraries. Even though you might not have any experience with it, you should get up to speed quite fast since both of these libraries are easy to use.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### zod
+There are several ways to add validations to your form. Zod is the one that integrates best with TypeScript, but you can use any other library or write your custom validations also.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## UI
+![burger challenge ui](./ui.svg)
 
-## Deploy on Vercel
+The UI should roughly look like the image above as a guideline. You can freely decide how to arrange the input fields inside the order part. The order summary should display all ordered burgers with their size and price. Below we want to show the customer how much he saves with the promotion code and how much is deducted with his discount code. Clicking on the checkout button at the bottom should display an alert to the customer that his order was successful and the amount he paid.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Advanced
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### TypeScript
+We are using TypeScript in all of our projects and want to make use of it as much as possible. It is fine to use `any` in this coding challenge, but you can show off your TypeScript skills by using types throughout the application and having type safety where possible
+
+### Downshift
+ChakraUI does not style the options of a `Select` and uses the default browser implementation. You can improve this by using a library like downshift to build a custom select component which still fulfills all accessibility criteria. 
+
+
+
+
+
