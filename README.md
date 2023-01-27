@@ -20,16 +20,7 @@ To stay competitive with other burger restaurants we offer several ways to our c
 After confirming the order we want to redirect the customer to a success page and show him that his order was successful, and he will receive his order soon.
 
 ## Libraries
-We have some libraries that we are using in most of our finstreet projects and would like to use them in this project as well:
-
-### ChakraUI
-If you already have experience with using ChakraUI feel free to use it here as well, but you can also use the default html components to not waste too much time on learning ChakraUI. 
-
-### react-hook-form / react-final-form
-You can choose one of the two form libraries. Even though you might not have any experience with it, you should get up to speed quite fast since both of these libraries are easy to use.
-
-### zod
-There are several ways to add validations to your form. Zod is the one that integrates best with TypeScript, but you can use any other library or write your custom validations also.
+You can use libraries that you are most familiar with and that you think fit this use case and explain your choice later in the interview.
 
 ## UI
 ![burger challenge ui](./ui.svg)
@@ -41,10 +32,6 @@ You do not have to learn these technologies if you do not have the experience wi
 
 ### TypeScript
 We are using TypeScript in all of our projects and want to make use of it as much as possible. It is fine to use `any` in this coding challenge, but you can show off your TypeScript skills by using types throughout the application and having type safety where possible
-
-### Downshift
-ChakraUI does not style the options of a `Select` and uses the default browser implementation. You can improve this by using a library like downshift to build a custom select component which still fulfills all accessibility criteria. 
-
 
 ## How to work
 Start by cloning this project on your machine, finish the task and create a repository on your personal GitHub account. After you are done with the coding challenge you should invite your reviewers to the repository so that they can prepare the review and the second interview with you based on your given solution.You will receive the GitHub names in your invitation to the next interview. In this interview you will be able to present your solution and answer our potential questions.
