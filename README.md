@@ -37,12 +37,23 @@ There are several ways to add validations to your form. Zod is the one that inte
 The UI should roughly look like the image above as a guideline. You can freely decide how to arrange the input fields inside the order part. The order summary should display all ordered burgers with their size and price. Below we want to show the customer how much he saves with the promotion code and how much is deducted with his discount code. Clicking on the checkout button at the bottom should display an alert to the customer that his order was successful and the amount he paid.
 
 ## Advanced
+You do not have to learn these technologies if you do not have the experience with them at the moment. It is definitely possible to complete the challenge without these advanced tasks.
 
 ### TypeScript
 We are using TypeScript in all of our projects and want to make use of it as much as possible. It is fine to use `any` in this coding challenge, but you can show off your TypeScript skills by using types throughout the application and having type safety where possible
 
 ### Downshift
 ChakraUI does not style the options of a `Select` and uses the default browser implementation. You can improve this by using a library like downshift to build a custom select component which still fulfills all accessibility criteria. 
+
+
+## How to work
+Start by cloning this project on your machine, finish the task and create a repository on your personal GitHub account. After you are done with the coding challenge you should invite your reviewers to the repository so that they can prepare the review and the second interview with you based on your given solution.You will receive the GitHub names in your invitation to the next interview. In this interview you will be able to present your solution and answer our potential questions.
+
+### Use all available tools
+This coding challenge should be as close to a real project as possible. We *want* you to use tools like ChatGPT or GitHub Copilot to see the quality of your code with the available tools.
+
+### Timeframe
+We estimate that you can complete the project in around 4 hours and should not use way more time than this. Even if some tasks or features are not finished after four hours we still get valuable feedback about your way of work.
 
 
 
